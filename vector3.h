@@ -128,7 +128,7 @@ struct vector3
 		return (*this - other).length() <= tolerance;
 	}
 
-	inline constexpr bool()
+	inline constexpr operator bool() const
 	{
 		return x == 0 && y == 0 && z == 0;
 	}
