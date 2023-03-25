@@ -58,4 +58,6 @@ struct vector3
 		y /= other.y;
 		z /= other.z;
 	}
+
+	inline 
 };
