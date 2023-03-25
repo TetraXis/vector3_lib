@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector3_lib", "vector3_lib.vcxproj", "{E72CA005-F781-4CBE-8150-043A9734AEF9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector3_lib_unit_test", "..\vector3_lib_unit_test\vector3_lib_unit_test.vcxproj", "{E02253BA-3867-4FD2-889A-191E760CB5A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{E72CA005-F781-4CBE-8150-043A9734AEF9}.Release|x64.Build.0 = Release|x64
 		{E72CA005-F781-4CBE-8150-043A9734AEF9}.Release|x86.ActiveCfg = Release|Win32
 		{E72CA005-F781-4CBE-8150-043A9734AEF9}.Release|x86.Build.0 = Release|Win32
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Debug|x64.ActiveCfg = Debug|x64
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Debug|x64.Build.0 = Debug|x64
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Debug|x86.Build.0 = Debug|Win32
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Release|x64.ActiveCfg = Release|x64
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Release|x64.Build.0 = Release|x64
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Release|x86.ActiveCfg = Release|Win32
+		{E02253BA-3867-4FD2-889A-191E760CB5A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

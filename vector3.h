@@ -63,15 +63,29 @@ struct vector3
 		return *this;
 	}
 
-	inline constexpr double length()
+	inline constexpr double length() const
 	{
 		return sqrt(x * x + y * y + z * z);
 	}
 
-	inline constexpr void normalize()
+	constexpr vector3& normalize()
 	{
-		x /= length();
-		y /= length();
-		z /= length();
+		double len = length();
+		x /= len;
+		y /= len;
+		z /= len;
+		return *this;
+	}
+
+	constexpr vector3 normalized() const
+	{
+		double len = length();
+		return { x / len, y / len,z / len };
 	}
 };
+
+template<typename Ty>
+inline constexpr double dot(const vector3<Ty>& a, const vector3<Ty>& b)
+{
+	return a.x * b.x + a.y * b.y + a.z * b.z;
+}
