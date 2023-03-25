@@ -1,6 +1,6 @@
 #pragma once
 
-#include <bitset>
+#include <cmath>
 
 template<typename Ty>
 struct vector3
@@ -31,33 +31,47 @@ struct vector3
 		return { x / other.x,y / other.y,z / other.z };
 	}
 	
-	inline constexpr vector3 operator += (const vector3& other)
+	inline constexpr vector3& operator += (const vector3& other)
 	{
 		x += other.x;
 		y += other.y;
 		z += other.z;
+		return *this;
 	}
 
-	inline constexpr vector3 operator -= (const vector3& other)
+	inline constexpr vector3& operator -= (const vector3& other)
 	{
 		x -= other.x;
 		y -= other.y;
 		z -= other.z;
+		return *this;
 	}
 
-	inline constexpr vector3 operator *= (const vector3& other)
+	inline constexpr vector3& operator *= (const vector3& other)
 	{
 		x *= other.x;
 		y *= other.y;
 		z *= other.z;
+		return *this;
 	}
 
-	inline constexpr vector3 operator /= (const vector3& other)
+	inline constexpr vector3& operator /= (const vector3& other)
 	{
 		x /= other.x;
 		y /= other.y;
 		z /= other.z;
+		return *this;
 	}
 
-	inline 
+	inline constexpr double length()
+	{
+		return sqrt(x * x + y * y + z * z);
+	}
+
+	inline constexpr void normalize()
+	{
+		x /= length();
+		y /= length();
+		z /= length();
+	}
 };
